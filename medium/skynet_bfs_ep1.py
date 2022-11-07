@@ -105,8 +105,8 @@ for i in range(l):
     n1, n2 = [int(j) for j in input().split()]
     node1 = next(filter(lambda x: x.id == n1, nodes_list))
     node2 = next(filter(lambda x: x.id == n2, nodes_list))
-    node1.connected_to(node2)
-    node2.connected_to(node1)
+    node1.connected_to.append(node2)
+    node2.connected_to.append(node1)
 
 for i in range(e):
     ei = int(input())  # the index of a gateway node
