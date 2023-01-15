@@ -205,8 +205,6 @@ const allConstruct=(target, wordBank, memo ={}) =>{
 }
 
 
-
-
 console.log(gridTraveler(6,3));
 console.log(gridTraveler(2,3));
 console.log(gridTraveler(16,13));
